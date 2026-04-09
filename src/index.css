@@ -36,7 +36,7 @@
     --font-body: 'Inter', system-ui, sans-serif;
 
     /* ── Spacing ── */
-    --section-padding-y: 120px;
+    --section-padding-y: 88px;
     --section-padding-x: 80px;
     --content-max-width: 1280px;
     --content-narrow: 720px;
@@ -190,8 +190,8 @@
 
 @media (max-width: 768px) {
   .section-padding {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -216,10 +216,21 @@
 
 /* ── Reduced motion ── */
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
+  .marquee-track { animation: none; }
 }

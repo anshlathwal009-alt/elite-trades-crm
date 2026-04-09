@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function PageHero({ eyebrow, line1, line2, body, children }) {
   return (
-    <section className="section-padding" style={{ backgroundColor: "var(--color-bg-secondary)", paddingTop: 160 }}>
+    <section className="section-padding" style={{ backgroundColor: "var(--color-bg-secondary)", paddingTop: 120 }}>
       <div className="content-max">
         {eyebrow && (
           <motion.p

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { HOME } from "../../config/content.en";
 import SectionHeading from "../SectionHeading";
+import { Link } from "react-router-dom";
 
 export default function ProcessSection() {
   const p = HOME.process;
@@ -8,49 +9,38 @@ export default function ProcessSection() {
   return (
     <section className="section-padding">
       <div className="content-max">
-        <div className="text-center mb-16">
-          <SectionHeading eyebrow={p.eyebrow} line1={p.headlineLine1} line2={p.headlineLine2} align="center" />
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+          <SectionHeading eyebrow={p.eyebrow} line1={p.headlineLine1} line2={p.headlineLine2} />
+          <Link to="/contact" className="font-body text-sm inline-flex items-center gap-1 group self-start md:self-auto" style={{ color: "var(--color-text-muted)" }}>
+            <span className="group-hover:text-[var(--color-accent-warm)] transition-colors">Get your free quote</span>
+            <span className="group-hover:translate-x-1 transition-transform inline-block group-hover:text-[var(--color-accent-warm)]">→</span>
+          </Link>
         </div>
 
-        {/* Steps */}
-        <div className="relative">
-          {/* Connecting line (desktop) */}
-          <div
-            className="hidden md:block absolute top-6 left-[16.67%] right-[16.67%] h-[0.5px]"
-            style={{ backgroundColor: "var(--color-border)" }}
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-            {p.steps.map((step, i) => (
-              <motion.div
-                key={step.number}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.15 }}
-                transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94], delay: i * 0.15 }}
-                className="text-center md:text-left"
-              >
-                <p
-                  className="eyebrow mb-4"
-                  style={{ letterSpacing: "0.10em" }}
-                >
-                  {step.number} / {step.title}
-                </p>
-                <h4
-                  className="font-body mb-3"
-                  style={{ fontSize: 22, fontWeight: 500, color: "var(--color-text-primary)" }}
-                >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:divide-x" style={{ borderTop: "0.5px solid var(--color-border)", borderBottom: "0.5px solid var(--color-border)" }}>
+          {p.steps.map((step, i) => (
+            <motion.div
+              key={step.number}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.12 }}
+              className="py-8 px-0 md:px-8 first:pl-0 last:pr-0"
+              style={{ borderColor: "var(--color-border)" }}
+            >
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="font-display" style={{ fontSize: 48, fontWeight: 300, color: "var(--color-border)", lineHeight: 1 }}>
+                  {step.number}
+                </span>
+                <p className="font-body font-medium" style={{ fontSize: 16, color: "var(--color-text-primary)" }}>
                   {step.title}
-                </h4>
-                <p
-                  className="font-body"
-                  style={{ fontSize: 16, color: "var(--color-text-secondary)", lineHeight: 1.7 }}
-                >
-                  {step.body}
                 </p>
-              </motion.div>
-            ))}
-          </div>
+              </div>
+              <p className="font-body" style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.75 }}>
+                {step.body}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

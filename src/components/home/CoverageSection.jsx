@@ -6,7 +6,7 @@ export default function CoverageSection() {
   const c = HOME.coverage;
 
   return (
-    <section className="section-padding">
+    <section className="section-padding" style={{ backgroundColor: "var(--color-bg-secondary)" }}>
       <div className="content-max">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center">
           {/* Text — 5 cols */}

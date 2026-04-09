@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { HOME } from "../../config/content.en";
+import { HOME, IMAGES } from "../../config/content.en";
 
 export default function HeroSection() {
   const hero = HOME.hero;
@@ -15,7 +15,7 @@ export default function HeroSection() {
         className="absolute inset-0"
       >
         <img
-          src="https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/bbc71f466_1762073613-Header.jpg"
+          src={IMAGES.hero}
           alt="Premium London renovation interior"
           className="w-full h-full object-cover"
         />
