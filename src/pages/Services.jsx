@@ -58,8 +58,14 @@ export default function Services() {
           <section
             key={service.slug}
             id={service.slug}
-            className="section-padding"
-            style={{ backgroundColor: i % 2 === 0 ? "var(--color-bg)" : "var(--color-bg-secondary)" }}
+            className=""
+            style={{
+              backgroundColor: i % 2 === 0 ? "var(--color-bg)" : "var(--color-bg-secondary)",
+              paddingTop: 48,
+              paddingBottom: 48,
+              paddingLeft: "clamp(20px, 6.25vw, 80px)",
+              paddingRight: "clamp(20px, 6.25vw, 80px)",
+            }}
           >
             <div className="content-max">
               <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center`}>
@@ -76,7 +82,7 @@ export default function Services() {
                     src={service.image || SERVICE_IMAGES[i]}
                     alt={service.title}
                     className="w-full object-cover"
-                    style={{ height: "clamp(300px, 35vw, 450px)" }}
+                    style={{ height: "clamp(260px, 30vw, 400px)" }}
                     loading="lazy"
                   />
                 </motion.div>
