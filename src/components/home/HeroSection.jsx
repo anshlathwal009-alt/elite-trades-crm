@@ -10,8 +10,8 @@ export default function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0" style={{ backgroundColor: "#1a1a12" }}>
         <img
-          src={IMAGES.hero}
-          alt="Premium London construction site"
+          src="https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/4fc2178d4_pexels-arutnevv-34951489.jpg"
+          alt="Premium London interior design"
           className="w-full h-full object-cover"
         />
       </div>
@@ -67,10 +67,10 @@ export default function HeroSection() {
                 {hero.supporting}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-row gap-4">
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center font-body text-sm font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98]"
+                  className="inline-flex items-center justify-center font-body text-sm font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] whitespace-nowrap"
                   style={{
                     backgroundColor: "var(--color-accent-warm)",
                     color: "#FAFAF8",
@@ -82,14 +82,14 @@ export default function HeroSection() {
                 </a>
                 <a
                   href="/projects"
-                  className="inline-flex items-center justify-center text-center font-body text-sm font-medium px-5 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+                  className="inline-flex items-center justify-center text-center font-body text-sm font-medium px-6 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                   style={{
                     backgroundColor: "rgba(250,250,248,0.12)",
                     color: "#FAFAF8",
                     border: "1.5px solid rgba(250,250,248,0.4)",
                     backdropFilter: "blur(8px)",
-                    maxWidth: 90,
-                    lineHeight: 1.3,
+                    minWidth: 110,
+                    lineHeight: 1.4,
                   }}
                 >
                   View Our Work
