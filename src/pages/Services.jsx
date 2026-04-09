@@ -11,14 +11,14 @@ import { SERVICES_PAGE, SERVICES_DATA, IMAGES } from "../config/content.en";
 const ICON_MAP = { Hammer, Home, CookingPot, Zap, PaintBucket, Grid3x3, Building2, Ruler, Wrench };
 
 const SERVICE_IMAGES = [
-  IMAGES.kitchenProject,
+  IMAGES.bathroomTub,
   IMAGES.extensionProject,
   IMAGES.bathroomProject,
   IMAGES.mayfairProject,
-  IMAGES.knightsbridgeProject,
-  IMAGES.londonCoverage,
+  IMAGES.shower,
+  IMAGES.hallway,
   IMAGES.introPortrait,
-  IMAGES.hero,
+  IMAGES.londonCoverage,
 ];
 
 export default function Services() {

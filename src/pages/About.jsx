@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Leaf, Check } from "lucide-react";
 import SectionHeading from "../components/SectionHeading";
-import AccreditationBar from "../components/AccreditationBar";
 import CTASection from "../components/CTASection";
 import { ABOUT_PAGE, COMPANY, IMAGES, HOME } from "../config/content.en";
 

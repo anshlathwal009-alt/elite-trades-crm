@@ -556,20 +556,12 @@ export const BLOG_PAGE = {
 export const FOOTER = {
   cta: "Book a consult →",
   columns: {
-    address: {
-      label: "Office",
-    },
-    contact: {
-      label: "Call or Email",
-    },
-    hours: {
-      label: "Opening Times",
-    },
-    social: {
-      label: "Follow Us",
-    },
+    address: { label: "Office" },
+    contact: { label: "Call or Email" },
+    hours: { label: "Opening Times" },
+    social: { label: "Follow Us" },
   },
-  legal: `© 2026 London Elite Trades Limited | Company number: ${COMPANY.companyNumber}`,
+  legal: `© 2026 London Elite Trades Limited | Company number: 10994476`,
   legalLinks: [
     { label: "Terms & Conditions", href: "#" },
     { label: "Privacy Policy", href: "#" },
@@ -577,24 +569,60 @@ export const FOOTER = {
   ],
 };
 
+export const ALL_SERVICES_LIST = [
+  "Basements & Underpinning Services",
+  "Demolition Services",
+  "Bathrooms, Showers & Wetroom",
+  "Drainage & Irrigation Services",
+  "Brick Laying & Masonry Services",
+  "Electrical Services",
+  "Cabinetry & Joinery Services",
+  "Extension Services",
+  "Carpentry Services",
+  "Fibre Glass GRP Systems",
+  "Commercial Changing Rooms",
+  "Floor Screeding Services",
+  "Commercial Development Services",
+  "Groundwork & Landscaping Services",
+  "Kitchens & Utility Room Services",
+  "Structural Services",
+  "Loft Conversion Services",
+  "Tiling Grouting & Mastic Application",
+  "Masonry Restoration Services",
+  "Timber Flooring Installation & Restoration",
+  "Plastering & Rendering Services",
+  "Underfloor Heating Services",
+  "Plumbing & Heating Services",
+  "Design & Build",
+  "Refurbishments & Renovation Services",
+  "Build Management",
+  "Roofing Services",
+  "Interior Design",
+];
+
 export const IMAGES = {
-  hero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/493fe7ca1_generated_80c2b75e.png",
-  kitchenProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/44827b842_generated_ba179c6b.png",
-  mayfairProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/fc00cd75c_generated_a8354b8e.png",
-  knightsbridgeProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/54877152f_generated_1ba2fb3e.png",
-  extensionProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/da3b71717_generated_592303d1.png",
-  aboutHero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/11486b8c1_generated_bf5a7410.png",
-  londonCoverage: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/45613d5f7_generated_3ad9fde1.png",
-  bathroomProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/b471c77eb_generated_d1288bd4.png",
-  introPortrait: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/567bd81ef_generated_6853bed0.png",
+  hero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/bbc71f466_1762073613-Header.jpg",
+  kitchenProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/5b8becebd_1765535824-1762074479-WhatsAppImage2025-02-01at100428_c32ab84f1.jpg",
+  mayfairProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/4fc14bda6_1762072358-WhatsAppImage2025-02-01at090823_744b54f61.jpg",
+  knightsbridgeProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/0797b16dd_1761835057-1754468436-fot1.jpg",
+  extensionProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/e673b0df0_1762073738-MaskGroup191.jpg",
+  aboutHero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/c904b24c3_1765535893-1762081228-WhatsAppImage2025-02-01at101234_a5319c5f.jpg",
+  londonCoverage: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/5b26833d7_1762073717-MaskGroup201.jpg",
+  bathroomProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/ca7094c5a_1762072360-MaskGroup3771.jpg",
+  introPortrait: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/b7fb67a29_1765535895-1762081228-MaskGroup3791.jpg",
+  shower: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/c9ffc7a3c_1762073460-Group7781.jpg",
+  hallway: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/46869256d_1762073460-MaskGroup321.jpg",
+  bathroomVanity: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/f431900b7_1765535825-1762074479-WhatsAppImage2025-02-01at091537_72b1bce31.jpg",
+  wallpaperStairs: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/c708c97b2_1762073613-WhatsAppImage2025-02-01at094739_c79f42a21.jpg",
+  bathroomTub: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/8f422e0d8_1762073697-MaskGroup211.jpg",
 };
 
 // Map project IDs to images
 export const PROJECT_IMAGES = {
-  1: IMAGES.kitchenProject,
-  2: IMAGES.mayfairProject,
-  3: IMAGES.knightsbridgeProject,
-  4: IMAGES.extensionProject,
-  5: IMAGES.bathroomProject,
-  6: IMAGES.introPortrait,
+  1: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/5b8becebd_1765535824-1762074479-WhatsAppImage2025-02-01at100428_c32ab84f1.jpg",
+  2: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/4fc14bda6_1762072358-WhatsAppImage2025-02-01at090823_744b54f61.jpg",
+  3: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/0797b16dd_1761835057-1754468436-fot1.jpg",
+  4: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/e673b0df0_1762073738-MaskGroup191.jpg",
+  5: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/ca7094c5a_1762072360-MaskGroup3771.jpg",
+  6: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/c904b24c3_1765535893-1762081228-WhatsAppImage2025-02-01at101234_a5319c5f.jpg",
 };
