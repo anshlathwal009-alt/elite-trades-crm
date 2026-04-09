@@ -146,6 +146,7 @@ export const HOME = {
 export const SERVICES_DATA = [
   {
     icon: "Hammer",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/5ea648fd6_generated_image.png",
     title: "Renovation & Refurbishment",
     description:
       "End-to-end residential and commercial renovation, from concept to completion.",
@@ -163,6 +164,7 @@ export const SERVICES_DATA = [
   },
   {
     icon: "Home",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/1ff86e563_generated_image.png",
     title: "Extensions & Loft Conversions",
     description:
       "Structural extensions and full loft conversions that expand your living space.",
@@ -180,6 +182,7 @@ export const SERVICES_DATA = [
   },
   {
     icon: "CookingPot",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/237cfdfd6_generated_image.png",
     title: "Kitchens & Bathrooms",
     description:
       "Premium kitchen and bathroom installations with meticulous finishing.",
@@ -197,6 +200,7 @@ export const SERVICES_DATA = [
   },
   {
     icon: "Zap",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/ef0e45d62_generated_image.png",
     title: "Electrical & Plumbing",
     description:
       "Certified electrical and plumbing services for new builds and refurbishments.",
@@ -214,6 +218,7 @@ export const SERVICES_DATA = [
   },
   {
     icon: "PaintBucket",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/efee6328b_generated_image.png",
     title: "Plastering & Rendering",
     description:
       "Internal plastering and external rendering to the highest standard.",
@@ -231,6 +236,7 @@ export const SERVICES_DATA = [
   },
   {
     icon: "Grid3x3",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/c71be6452_generated_image.png",
     title: "Flooring & Tiling",
     description:
       "Timber flooring, tiling, and underfloor heating installation.",
@@ -248,6 +254,7 @@ export const SERVICES_DATA = [
   },
   {
     icon: "Building2",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/99130d14f_generated_image.png",
     title: "Structural Works",
     description:
       "Basements, underpinning, brick laying, masonry, and groundwork services.",
@@ -265,6 +272,7 @@ export const SERVICES_DATA = [
   },
   {
     icon: "Ruler",
+    image: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/ddf613cb9_generated_image.png",
     title: "Design & Build",
     description:
       "Full design and build management including interior design and project coordination.",

@@ -24,42 +24,50 @@ export default function ServiceCard({ service, index = 0 }) {
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94], delay: index * 0.08 }}
       whileHover={{ y: -6, transition: { duration: 0.25, ease: "easeOut" } }}
-      className="p-8 group cursor-pointer"
+      className="group cursor-pointer overflow-hidden"
       style={{
         backgroundColor: "var(--color-surface-elevated)",
         borderRadius: "var(--radius-lg)",
         border: "1px solid var(--color-border-subtle)",
         boxShadow: "var(--shadow-sm)",
-        transition: "box-shadow 0.25s ease",
       }}
     >
-      <div
-        className="w-14 h-14 flex items-center justify-center mb-6"
-        style={{
-          backgroundColor: "rgba(181,147,90,0.1)",
-          borderRadius: "var(--radius-md)",
-          border: "1px solid rgba(181,147,90,0.2)",
-        }}
-      >
-        <Icon
-          size={26}
-          strokeWidth={1.5}
-          style={{ color: "var(--color-accent-warm)" }}
-        />
+      {service.image && (
+        <div className="overflow-hidden" style={{ height: 180 }}>
+          <img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+      )}
+
+      <div className="p-6">
+        <div
+          className="w-10 h-10 flex items-center justify-center mb-4"
+          style={{
+            backgroundColor: "rgba(181,147,90,0.1)",
+            borderRadius: "var(--radius-md)",
+            border: "1px solid rgba(181,147,90,0.2)",
+          }}
+        >
+          <Icon size={20} strokeWidth={1.5} style={{ color: "var(--color-accent-warm)" }} />
+        </div>
+        <h4
+          className="font-display mb-2"
+          style={{ fontSize: 19, fontWeight: 500, fontStyle: "italic", color: "var(--color-text-primary)", lineHeight: 1.3 }}
+        >
+          {service.title}
+        </h4>
+        <p
+          className="font-body mb-4"
+          style={{ fontSize: 13, color: "var(--color-text-secondary)", lineHeight: 1.7 }}
+        >
+          {service.description}
+        </p>
+        <ArrowLink href={`/services#${service.slug}`}>Explore service</ArrowLink>
       </div>
-      <h4
-        className="font-display mb-3"
-        style={{ fontSize: 20, fontWeight: 500, fontStyle: "italic", color: "var(--color-text-primary)", lineHeight: 1.3 }}
-      >
-        {service.title}
-      </h4>
-      <p
-        className="font-body mb-5"
-        style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.75 }}
-      >
-        {service.description}
-      </p>
-      <ArrowLink href={`/services#${service.slug}`}>Explore service</ArrowLink>
     </motion.div>
   );
 }
