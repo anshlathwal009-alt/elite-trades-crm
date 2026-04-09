@@ -14,28 +14,22 @@ const LOGOS = [
   { name: "Constructionline", url: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/708d3dded_1768477663-approved-con-line1.png" },
 ];
 
-export default function AccreditationBar({ label, dark = false }) {
-  // Duplicate for seamless loop
+export default function AccreditationBar({ label }) {
   const items = [...LOGOS, ...LOGOS];
 
   return (
     <div
       style={{
-        background: dark
-          ? "linear-gradient(135deg, #1a1a12 0%, #2a2218 40%, #1e1a10 100%)"
-          : "linear-gradient(135deg, #f9f5ee 0%, #f0e8d8 40%, #ede0c8 100%)",
-        borderTop: dark ? "0.5px solid rgba(181,147,90,0.25)" : "0.5px solid rgba(181,147,90,0.3)",
-        borderBottom: dark ? "0.5px solid rgba(181,147,90,0.25)" : "0.5px solid rgba(181,147,90,0.3)",
+        background: "linear-gradient(135deg, #f9f5ee 0%, #f0e8d8 40%, #ede0c8 100%)",
+        borderTop: "0.5px solid rgba(181,147,90,0.3)",
+        borderBottom: "0.5px solid rgba(181,147,90,0.3)",
         paddingTop: 20,
         paddingBottom: 20,
         overflow: "hidden",
       }}
     >
       {label && (
-        <p
-          className="eyebrow text-center mb-4"
-          style={{ color: dark ? "rgba(250,250,248,0.45)" : "var(--color-text-muted)" }}
-        >
+        <p className="eyebrow text-center mb-4" style={{ color: "var(--color-text-muted)" }}>
           {label}
         </p>
       )}
@@ -43,15 +37,11 @@ export default function AccreditationBar({ label, dark = false }) {
         {/* Fade edges */}
         <div style={{
           position: "absolute", left: 0, top: 0, bottom: 0, width: 80, zIndex: 2,
-          background: dark
-            ? "linear-gradient(to right, rgba(42,42,38,1), transparent)"
-            : `linear-gradient(to right, var(--color-bg-secondary), transparent)`,
+          background: "linear-gradient(to right, #f9f5ee, transparent)",
         }} />
         <div style={{
           position: "absolute", right: 0, top: 0, bottom: 0, width: 80, zIndex: 2,
-          background: dark
-            ? "linear-gradient(to left, rgba(42,42,38,1), transparent)"
-            : `linear-gradient(to left, var(--color-bg-secondary), transparent)`,
+          background: "linear-gradient(to left, #ede0c8, transparent)",
         }} />
 
         <div className="marquee-track">
@@ -69,7 +59,6 @@ export default function AccreditationBar({ label, dark = false }) {
                   width: "auto",
                   maxWidth: 130,
                   objectFit: "contain",
-                  filter: dark ? "brightness(0) invert(1)" : "none",
                   opacity: 1,
                   transition: "opacity 200ms",
                 }}
