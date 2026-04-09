@@ -71,10 +71,10 @@ export default function Services() {
               <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-center`}>
                 {/* Image */}
                 <motion.div
-                  initial={{ clipPath: "inset(0 0 100% 0)" }}
-                  whileInView={{ clipPath: "inset(0 0 0% 0)" }}
+                  initial={{ opacity: 0, x: imageLeft ? -30 : 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, amount: 0.1 }}
-                  transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                   className={`lg:col-span-6 overflow-hidden ${imageLeft ? "lg:order-1" : "lg:order-2"}`}
                   style={{ borderRadius: "var(--radius-xl)" }}
                 >
