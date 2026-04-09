@@ -73,7 +73,7 @@ export default function Services() {
                   style={{ borderRadius: "var(--radius-xl)" }}
                 >
                   <img
-                    src={SERVICE_IMAGES[i]}
+                    src={service.image || SERVICE_IMAGES[i]}
                     alt={service.title}
                     className="w-full object-cover"
                     style={{ height: "clamp(300px, 35vw, 450px)" }}
