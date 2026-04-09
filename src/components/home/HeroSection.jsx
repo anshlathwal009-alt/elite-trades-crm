@@ -67,10 +67,10 @@ export default function HeroSection() {
                 {hero.supporting}
               </p>
 
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-col gap-3" style={{ maxWidth: 240 }}>
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center font-body text-sm font-semibold px-8 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] whitespace-nowrap"
+                  className="inline-flex items-center justify-center font-body text-sm font-semibold px-6 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] whitespace-nowrap"
                   style={{
                     backgroundColor: "var(--color-accent-warm)",
                     color: "#FAFAF8",
@@ -82,14 +82,12 @@ export default function HeroSection() {
                 </a>
                 <a
                   href="/projects"
-                  className="inline-flex items-center justify-center text-center font-body text-sm font-medium px-6 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+                  className="inline-flex items-center justify-center text-center font-body text-sm font-medium px-6 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
                   style={{
                     backgroundColor: "rgba(250,250,248,0.12)",
                     color: "#FAFAF8",
                     border: "1.5px solid rgba(250,250,248,0.4)",
                     backdropFilter: "blur(8px)",
-                    minWidth: 110,
-                    lineHeight: 1.4,
                   }}
                 >
                   View Our Work
