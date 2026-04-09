@@ -8,18 +8,13 @@ export default function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden" style={{ height: "100svh", minHeight: 600 }}>
       {/* Background image */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="absolute inset-0"
-      >
+      <div className="absolute inset-0">
         <img
           src={IMAGES.hero}
           alt="Premium London renovation interior"
           className="w-full h-full object-cover"
         />
-      </motion.div>
+      </div>
 
       {/* Gradient overlay */}
       <div

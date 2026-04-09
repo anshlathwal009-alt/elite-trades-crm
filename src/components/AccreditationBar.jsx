@@ -68,12 +68,8 @@ export default function AccreditationBar({ label, dark = false }) {
                   maxWidth: 130,
                   objectFit: "contain",
                   filter: dark ? "brightness(0) invert(1)" : "none",
-                  opacity: dark ? 0.85 : 1,
+                  opacity: 1,
                   transition: "opacity 200ms",
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.opacity = dark ? "0.85" : "1";
                 }}
               />
             </div>
