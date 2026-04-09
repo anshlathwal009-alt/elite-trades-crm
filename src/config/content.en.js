@@ -601,7 +601,7 @@ export const ALL_SERVICES_LIST = [
 ];
 
 export const IMAGES = {
-  hero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/bbc71f466_1762073613-Header.jpg",
+  hero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/a7f298c69_generated_image.png",
   kitchenProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/5b8becebd_1765535824-1762074479-WhatsAppImage2025-02-01at100428_c32ab84f1.jpg",
   mayfairProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/4fc14bda6_1762072358-WhatsAppImage2025-02-01at090823_744b54f61.jpg",
   knightsbridgeProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/0797b16dd_1761835057-1754468436-fot1.jpg",

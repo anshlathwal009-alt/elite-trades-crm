@@ -8,10 +8,10 @@ export default function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden" style={{ height: "100svh", minHeight: 600 }}>
       {/* Background image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0" style={{ backgroundColor: "#1a1a12" }}>
         <img
           src={IMAGES.hero}
-          alt="Premium London renovation interior"
+          alt="Premium London construction site"
           className="w-full h-full object-cover"
         />
       </div>
