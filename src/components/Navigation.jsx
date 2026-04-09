@@ -36,12 +36,17 @@ export default function Navigation() {
       >
         <div className="content-max flex items-center justify-between h-16 md:h-20 px-5 md:px-10 lg:px-20">
           {/* Logo */}
-          <Link
-            to="/"
-            className="font-display text-lg md:text-xl font-medium tracking-tight transition-colors duration-300 shrink-0"
-            style={{ color: showLight ? "#FAFAF8" : "var(--color-text-primary)", fontWeight: 500 }}
-          >
-            London Elite Trades
+          <Link to="/" className="shrink-0 flex items-center">
+            <img
+              src="https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/85ba0a0d8_1748973677-header-logo-header-logo.png"
+              alt="London Elite Trades Ltd"
+              style={{
+                height: 44,
+                width: "auto",
+                filter: showLight ? "brightness(0) invert(1)" : "none",
+                transition: "filter 0.3s",
+              }}
+            />
           </Link>
 
           {/* Desktop nav links — shown md+ */}
