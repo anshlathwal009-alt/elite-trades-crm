@@ -21,9 +21,11 @@ export default function AccreditationBar({ label, dark = false }) {
   return (
     <div
       style={{
-        backgroundColor: dark ? "rgba(255,255,255,0.05)" : "var(--color-bg-secondary)",
-        borderTop: dark ? "0.5px solid rgba(250,250,248,0.1)" : "0.5px solid var(--color-border-subtle)",
-        borderBottom: dark ? "0.5px solid rgba(250,250,248,0.1)" : "0.5px solid var(--color-border-subtle)",
+        background: dark
+          ? "linear-gradient(135deg, #1a1a12 0%, #2a2218 40%, #1e1a10 100%)"
+          : "linear-gradient(135deg, #f9f5ee 0%, #f0e8d8 40%, #ede0c8 100%)",
+        borderTop: dark ? "0.5px solid rgba(181,147,90,0.25)" : "0.5px solid rgba(181,147,90,0.3)",
+        borderBottom: dark ? "0.5px solid rgba(181,147,90,0.25)" : "0.5px solid rgba(181,147,90,0.3)",
         paddingTop: 20,
         paddingBottom: 20,
         overflow: "hidden",

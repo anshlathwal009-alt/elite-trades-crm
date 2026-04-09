@@ -7,8 +7,12 @@ export default function Footer() {
       {/* Top row */}
       <div className="section-padding" style={{ paddingTop: 60, paddingBottom: 0 }}>
         <div className="content-max flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-10" style={{ borderBottom: "0.5px solid rgba(250,250,248,0.12)" }}>
-          <Link to="/" className="font-display text-xl font-medium" style={{ color: "#FAFAF8" }}>
-            London Elite Trades
+          <Link to="/" className="shrink-0 flex items-center">
+            <img
+              src="https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/85ba0a0d8_1748973677-header-logo-header-logo.png"
+              alt="London Elite Trades Ltd"
+              style={{ height: 44, width: "auto", filter: "brightness(0) invert(1)" }}
+            />
           </Link>
           <Link
             to="/contact"

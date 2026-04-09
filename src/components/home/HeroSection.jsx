@@ -70,7 +70,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 font-body text-sm font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] self-start"
+                  className="inline-flex items-center justify-center font-body text-sm font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98]"
                   style={{
                     backgroundColor: "var(--color-accent-warm)",
                     color: "#FAFAF8",
@@ -81,8 +81,8 @@ export default function HeroSection() {
                   Book Free Consultation
                 </a>
                 <a
-                  href={`tel:${COMPANY ? COMPANY.phone : ''}`}
-                  className="inline-flex items-center justify-center gap-2 font-body text-sm font-medium px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] self-start"
+                  href="/projects"
+                  className="inline-flex items-center justify-center font-body text-sm font-medium px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                   style={{
                     backgroundColor: "rgba(250,250,248,0.12)",
                     color: "#FAFAF8",
