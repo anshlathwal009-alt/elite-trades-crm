@@ -578,15 +578,15 @@ export const FOOTER = {
 };
 
 export const IMAGES = {
-  hero: "/__generating__/img_878a95b1bbce.png",
-  kitchenProject: "/__generating__/img_8b9d69bd03cf.png",
-  mayfairProject: "/__generating__/img_0c9b4ab8d6a5.png",
-  knightsbridgeProject: "/__generating__/img_3f5502576019.png",
-  extensionProject: "/__generating__/img_d698348fc411.png",
-  aboutHero: "/__generating__/img_df567af968de.png",
-  londonCoverage: "/__generating__/img_239ec0c246be.png",
-  bathroomProject: "/__generating__/img_131a2d40f488.png",
-  introPortrait: "/__generating__/img_f7feef5b2cec.png",
+  hero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/493fe7ca1_generated_80c2b75e.png",
+  kitchenProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/44827b842_generated_ba179c6b.png",
+  mayfairProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/fc00cd75c_generated_a8354b8e.png",
+  knightsbridgeProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/54877152f_generated_1ba2fb3e.png",
+  extensionProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/da3b71717_generated_592303d1.png",
+  aboutHero: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/11486b8c1_generated_bf5a7410.png",
+  londonCoverage: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/45613d5f7_generated_3ad9fde1.png",
+  bathroomProject: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/b471c77eb_generated_d1288bd4.png",
+  introPortrait: "https://media.base44.com/images/public/69d735e6d501ebc3b47eb64a/567bd81ef_generated_6853bed0.png",
 };
 
 // Map project IDs to images
