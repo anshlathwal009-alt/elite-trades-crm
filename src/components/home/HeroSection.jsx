@@ -9,9 +9,9 @@ export default function HeroSection() {
     <section className="relative w-full overflow-hidden" style={{ height: "100svh", minHeight: 600 }}>
       {/* Background image */}
       <motion.div
-        initial={{ clipPath: "inset(100% 0 0 0)" }}
-        animate={{ clipPath: "inset(0% 0 0 0)" }}
-        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
         className="absolute inset-0"
       >
         <img

@@ -6,7 +6,7 @@ import ButtonPrimary from "../ButtonPrimary";
 
 export default function ProjectsSection() {
   const p = HOME.projects;
-  const featured = PROJECTS_DATA.slice(0, 3);
+  const featured = PROJECTS_DATA.slice(0, 4);
 
   return (
     <section className="section-padding">
@@ -27,7 +27,7 @@ export default function ProjectsSection() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           {featured.map((project, i) => (
             <ProjectCard key={project.id} project={project} index={i} />
           ))}

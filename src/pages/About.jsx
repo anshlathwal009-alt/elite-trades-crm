@@ -99,10 +99,10 @@ export default function About() {
             <div className="hidden lg:block lg:col-span-1" />
             <div className="lg:col-span-6">
               <motion.div
-                initial={{ clipPath: "inset(0 0 100% 0)" }}
-                whileInView={{ clipPath: "inset(0 0 0% 0)" }}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
-                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="overflow-hidden"
                 style={{ borderRadius: "var(--radius-xl)" }}
               >

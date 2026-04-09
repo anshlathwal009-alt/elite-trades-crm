@@ -63,18 +63,17 @@ export default function AccreditationBar({ label, dark = false }) {
                 src={logo.url}
                 alt={logo.name}
                 style={{
-                  height: 36,
+                  height: 52,
                   width: "auto",
-                  maxWidth: 100,
+                  maxWidth: 130,
                   objectFit: "contain",
-                  filter: dark ? "brightness(0) invert(1)" : "grayscale(0.2)",
-                  opacity: dark ? 0.7 : 0.85,
-                  transition: "opacity 200ms, filter 200ms",
+                  filter: dark ? "brightness(0) invert(1)" : "none",
+                  opacity: dark ? 0.85 : 1,
+                  transition: "opacity 200ms",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; e.currentTarget.style.filter = "none"; }}
+                onMouseEnter={(e) => { e.currentTarget.style.opacity = "1"; }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.opacity = dark ? "0.7" : "0.85";
-                  e.currentTarget.style.filter = dark ? "brightness(0) invert(1)" : "grayscale(0.2)";
+                  e.currentTarget.style.opacity = dark ? "0.85" : "1";
                 }}
               />
             </div>
