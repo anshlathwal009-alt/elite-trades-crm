@@ -12,10 +12,10 @@ export default function Footer() {
           </Link>
           <Link
             to="/contact"
-            className="font-body text-sm font-medium px-6 py-[10px] rounded-full transition-all duration-200 hover:scale-[1.02]"
-            style={{ backgroundColor: "#FAFAF8", color: "#1A1A18" }}
+            className="font-body text-sm font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110"
+            style={{ backgroundColor: "var(--color-accent-warm)", color: "#FAFAF8", letterSpacing: "0.02em", boxShadow: "0 4px 20px rgba(181,147,90,0.25)" }}
           >
-            {FOOTER.cta}
+            Book Free Consultation
           </Link>
         </div>
       </div>

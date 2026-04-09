@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import { HOME, IMAGES } from "../../config/content.en";
+import { HOME, IMAGES, COMPANY } from "../../config/content.en";
 
 export default function HeroSection() {
   const hero = HOME.hero;
@@ -20,7 +20,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(to top, rgba(26,26,24,0.65) 0%, transparent 60%)",
+          background: "linear-gradient(160deg, rgba(26,26,24,0.45) 0%, rgba(26,26,24,0.25) 40%, rgba(26,26,24,0.8) 100%)",
         }}
       />
 
@@ -67,18 +67,32 @@ export default function HeroSection() {
                 {hero.supporting}
               </p>
 
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-2 font-body text-sm font-medium px-6 py-[10px] rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] self-start"
-                style={{
-                  backgroundColor: "rgba(250,250,248,0.15)",
-                  color: "#FAFAF8",
-                  border: "1.5px solid rgba(250,250,248,0.6)",
-                  backdropFilter: "blur(8px)",
-                }}
-              >
-                {hero.cta}
-              </a>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center gap-2 font-body text-sm font-semibold px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] self-start"
+                  style={{
+                    backgroundColor: "var(--color-accent-warm)",
+                    color: "#FAFAF8",
+                    letterSpacing: "0.01em",
+                    boxShadow: "0 4px 24px rgba(181,147,90,0.35)",
+                  }}
+                >
+                  Book Free Consultation
+                </a>
+                <a
+                  href={`tel:${COMPANY ? COMPANY.phone : ''}`}
+                  className="inline-flex items-center justify-center gap-2 font-body text-sm font-medium px-7 py-3 rounded-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] self-start"
+                  style={{
+                    backgroundColor: "rgba(250,250,248,0.12)",
+                    color: "#FAFAF8",
+                    border: "1.5px solid rgba(250,250,248,0.4)",
+                    backdropFilter: "blur(8px)",
+                  }}
+                >
+                  View Our Work
+                </a>
+              </div>
             </motion.div>
           </div>
 

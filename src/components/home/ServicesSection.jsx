@@ -8,7 +8,7 @@ export default function ServicesSection() {
   const featured = SERVICES_DATA.slice(0, 4);
 
   return (
-    <section className="section-padding" style={{ backgroundColor: "var(--color-bg-secondary)" }}>
+    <section className="section-padding" style={{ backgroundColor: "var(--color-bg)" }}>
       <div className="content-max">
         {/* Header row */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">

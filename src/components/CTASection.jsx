@@ -60,10 +60,10 @@ export default function CTASection() {
             >
               <a
                 href="/contact"
-                className="block w-full font-body text-sm font-medium text-center py-[13px] rounded-full mb-5 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
-                style={{ backgroundColor: "#FAFAF8", color: "#1A1A18" }}
+                className="block w-full font-body text-sm font-semibold text-center py-[14px] rounded-full mb-5 transition-all duration-200 hover:scale-[1.02] hover:brightness-105 active:scale-[0.98]"
+                style={{ backgroundColor: "var(--color-accent-warm)", color: "#FAFAF8", letterSpacing: "0.02em", boxShadow: "0 4px 20px rgba(181,147,90,0.3)" }}
               >
-                {cta.cta}
+                Book Your Free Consultation
               </a>
 
               <div className="flex flex-col gap-4">
